@@ -1,47 +1,39 @@
-# :package_description
+# Show an alert to the user if there is no connection from your server
 
-[![Latest Version on Packagist](https://img.shields.io/packagist/v/:vendor_slug/:package_slug.svg?style=flat-square)](https://packagist.org/packages/:vendor_slug/:package_slug)
-[![GitHub Tests Action Status](https://img.shields.io/github/workflow/status/:vendor_slug/:package_slug/run-tests?label=tests)](https://github.com/:vendor_slug/:package_slug/actions?query=workflow%3Arun-tests+branch%3Amain)
-[![GitHub Code Style Action Status](https://img.shields.io/github/workflow/status/:vendor_slug/:package_slug/Check%20&%20fix%20styling?label=code%20style)](https://github.com/:vendor_slug/:package_slug/actions?query=workflow%3A"Check+%26+fix+styling"+branch%3Amain)
-[![Total Downloads](https://img.shields.io/packagist/dt/:vendor_slug/:package_slug.svg?style=flat-square)](https://packagist.org/packages/:vendor_slug/:package_slug)
+[![Latest Version on Packagist](https://img.shields.io/packagist/v/marjose123/filament-no-connection.svg?style=flat-square)](https://packagist.org/packages/marjose123/filament-no-connection)
+[![GitHub Tests Action Status](https://img.shields.io/github/workflow/status/marjose123/filament-no-connection/run-tests?label=tests)](https://github.com/marjose123/filament-no-connection/actions?query=workflow%3Arun-tests+branch%3Amain)
+[![GitHub Code Style Action Status](https://img.shields.io/github/workflow/status/marjose123/filament-no-connection/Check%20&%20fix%20styling?label=code%20style)](https://github.com/marjose123/filament-no-connection/actions?query=workflow%3A"Check+%26+fix+styling"+branch%3Amain)
+[![Total Downloads](https://img.shields.io/packagist/dt/marjose123/filament-no-connection.svg?style=flat-square)](https://packagist.org/packages/marjose123/filament-no-connection)
 
-<!--delete-->
----
-This repo can be used to scaffold a Filament plugin. Follow these steps to get started:
 
-1. Press the "Use this template" button at the top of this repo to create a new repo with the contents of this skeleton.
-2. Run "php ./configure.php" to run a script that will replace all placeholders throughout all the files.
-3. Make something great!
----
-<!--/delete-->
 
-This is where your description should go. Limit it to a paragraph or two. Consider adding a small example.
+Show an alert to the user if there is no connection from your server.
 
 ## Installation
 
 You can install the package via composer:
 
 ```bash
-composer require :vendor_slug/:package_slug
+composer require marjose123/filament-no-connection
 ```
 
 You can publish and run the migrations with:
 
 ```bash
-php artisan vendor:publish --tag=":package_slug-migrations"
+php artisan vendor:publish --tag="filament-no-connection-migrations"
 php artisan migrate
 ```
 
 You can publish the config file with:
 
 ```bash
-php artisan vendor:publish --tag=":package_slug-config"
+php artisan vendor:publish --tag="filament-no-connection-config"
 ```
 
 Optionally, you can publish the views using
 
 ```bash
-php artisan vendor:publish --tag=":package_slug-views"
+php artisan vendor:publish --tag="filament-no-connection-views"
 ```
 
 This is the contents of the published config file:
@@ -54,8 +46,8 @@ return [
 ## Usage
 
 ```php
-$skeleton = new VendorName\Skeleton();
-echo $skeleton->echoPhrase('Hello, VendorName!');
+$filament-no-connection = new MarJose123\FilamentNoConnection();
+echo $filament-no-connection->echoPhrase('Hello, MarJose123!');
 ```
 
 ## Testing
@@ -78,7 +70,7 @@ Please review [our security policy](../../security/policy) on how to report secu
 
 ## Credits
 
-- [:author_name](https://github.com/:author_username)
+- [Marjose](https://github.com/MarJose123)
 - [All Contributors](../../contributors)
 
 ## License
