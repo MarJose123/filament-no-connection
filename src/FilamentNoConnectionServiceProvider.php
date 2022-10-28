@@ -45,11 +45,11 @@ class FilamentNoConnectionServiceProvider extends PluginServiceProvider
     public function packageBooted(): void
     {
         parent::packageBooted();
+        Livewire::component('Offline', Offline::class);
         Filament::registerRenderHook(
             'body.end',
             fn (): string => Blade::render('@livewire(\'offline\')'),
         );
-        Livewire::component('Offline', Offline::class);
     }
 
 }
