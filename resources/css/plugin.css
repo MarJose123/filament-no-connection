@@ -1,1 +1,45 @@
 @tailwind utilities;
+.internet-connection {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-around;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, .35);
+}
+
+.internet-connection__alert {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: .75em 1.5em;
+    border-radius: 1em 1em 0 0;
+    background-color: #DC143C;
+    box-shadow: 0 0 100px rgba(0, 0, 0, .15);
+    font-size: var(--font-size-medium);
+}
+
+.internet-connection__icon {
+    background-image: url("../dist/svg/alert.svg");
+    font-size: var(--font-size-large);
+}
+
+.internet-connection__text {
+    padding-left: .5em;
+    color: #FFCCCB;
+}
+
+.h-icon {
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    background-position: center;
+    background-size: 1em;
+    background-repeat: no-repeat;
+    content: '';
+    vertical-align: middle;
+}

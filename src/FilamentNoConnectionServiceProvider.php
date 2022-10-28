@@ -2,7 +2,11 @@
 
 namespace MarJose123\FilamentNoConnection;
 
+use Filament\Facades\Filament;
 use Filament\PluginServiceProvider;
+use Illuminate\Support\Facades\Blade;
+use Livewire\Livewire;
+use MarJose123\FilamentNoConnection\Http\Livewire\Offline;
 use Spatie\LaravelPackageTools\Package;
 
 class FilamentNoConnectionServiceProvider extends PluginServiceProvider
@@ -37,4 +41,15 @@ class FilamentNoConnectionServiceProvider extends PluginServiceProvider
     {
         $package->name(static::$name);
     }
+
+    public function packageBooted(): void
+    {
+        parent::packageBooted();
+        Filament::registerRenderHook(
+            'body.end',
+            fn (): string => Blade::render('@livewire(\'offline\')'),
+        );
+        Livewire::component('Offline', Offline::class);
+    }
+
 }
