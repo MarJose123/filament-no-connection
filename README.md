@@ -17,37 +17,10 @@ You can install the package via composer:
 composer require marjose123/filament-no-connection
 ```
 
-You can publish and run the migrations with:
-
-```bash
-php artisan vendor:publish --tag="filament-no-connection-migrations"
-php artisan migrate
-```
-
-You can publish the config file with:
-
-```bash
-php artisan vendor:publish --tag="filament-no-connection-config"
-```
-
 Optionally, you can publish the views using
 
 ```bash
 php artisan vendor:publish --tag="filament-no-connection-views"
-```
-
-This is the contents of the published config file:
-
-```php
-return [
-];
-```
-
-## Usage
-
-```php
-$filament-no-connection = new MarJose123\FilamentNoConnection();
-echo $filament-no-connection->echoPhrase('Hello, MarJose123!');
 ```
 
 ## Testing
