@@ -3,7 +3,7 @@
 [![Latest Version on Packagist](https://img.shields.io/packagist/v/marjose123/filament-no-connection.svg?style=flat-square)](https://packagist.org/packages/marjose123/filament-no-connection)
 [![Total Downloads](https://img.shields.io/packagist/dt/marjose123/filament-no-connection.svg?style=flat-square)](https://packagist.org/packages/marjose123/filament-no-connection)
 
-
+![filament-no-connection](/.art/img.png "filament-no-connection")
 
 Show an alert to the user if there is no connection from your server.
 
