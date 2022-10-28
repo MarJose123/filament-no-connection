@@ -39,7 +39,8 @@ class FilamentNoConnectionServiceProvider extends PluginServiceProvider
 
     public function configurePackage(Package $package): void
     {
-        $package->name(static::$name);
+        $package->name(static::$name)
+            ->hasViews();
     }
 
     public function packageBooted(): void
@@ -48,7 +49,7 @@ class FilamentNoConnectionServiceProvider extends PluginServiceProvider
         Livewire::component('Offline', Offline::class);
         Filament::registerRenderHook(
             'body.end',
-            fn (): string => Blade::render('@livewire(\'offline\')'),
+            fn (): string => Blade::render('@livewire(\'Offline\')'),
         );
     }
 
