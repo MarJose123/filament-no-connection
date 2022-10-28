@@ -8,6 +8,6 @@ class Offline extends Component
 {
     public function render()
     {
-        return view('livewire.offline');
+        return view('filament-no-connection::livewire.offline');
     }
 }
